@@ -1,0 +1,49 @@
+<!--  -->
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <script>
+            window.onload = function () {
+                function generate(num, gender) {
+                    if (gender == "m") {
+                        switch (num) {
+                            case -3:
+                                console.log("great grandfather");
+                                break;
+
+                            case -2:
+                                console.log("grandfather");
+                                break;
+
+                            case -1:
+                                console.log("father");
+                                break;
+
+                            case 0:
+                                console.log("me!");
+                                break;
+
+                            case 1:
+                                console.log("son");
+                                break;
+
+                            case 2:
+                                console.log("grandson");
+                                break;
+
+                            case 3:
+                                console.log("great grandson");
+                                break;
+                        }
+                    }
+                }
+                let num = parseInt(prompt("Enter number"));
+                let gender = prompt("m/f");
+                generate(num, gender);
+            };
+        </script>
+    </head>
+    <body>
+        <div id="elements">Open the console</div>
+    </body>
+</html>
